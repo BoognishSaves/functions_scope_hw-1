@@ -89,7 +89,17 @@ console.log(printLongestWord(["hello", "hi", "greetings"]));
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
+    // fib to 10 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+     const arr = [0, 1];
+     let a, b
+     for(let i = 2; i < num; i++) {
+         a = arr[i - 1];
+         b = arr[i - 2];
+         arr.push(a + b)
+     }
+     return arr
 }
+console.log(eulerFibo(10));
 
 // 9. findNeedle
 function findNeedle(arr) {
