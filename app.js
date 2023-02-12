@@ -9,13 +9,21 @@ function calculateCube(num) {
     // YOUR CODE HERE
     return num * num * num;
 }
-console.log(calculateCube(5));
+// console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
-    
+    const vowels = ['a','e','i','o','u'];
+
+    for (let i = 0; i < vowels.length; i++) {
+        if(letter.toLowerCase() === vowels[i]) {
+            return true;
+        }
+    }
+    return false;
 }
+console.log(isAVowel("A"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
