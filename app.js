@@ -74,7 +74,15 @@ function printPrimes(num) {
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+    let word = "";
+    for (let i = 0; i < arr.length; i++) {
+        if (word.length < arr[i].length) {
+            word = arr[i];
+        }
+    }
+    return word;
 }
+console.log(printLongestWord(["hello", "hi", "greetings"]));
 
 // BONUS!
 
