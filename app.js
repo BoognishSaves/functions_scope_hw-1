@@ -99,12 +99,18 @@ function eulerFibo(num) {
      }
      return arr
 }
-console.log(eulerFibo(10));
+// console.log(eulerFibo(10));
 
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
+    for (i = 0; i < arr.length; i++) {
+        if(arr[i] === "needle") {
+            return "found the needle at position " + i
+        }
+    }
 }
+console.log(findNeedle(["tomato", "needle", "test"]));
 
 // 10. sumPositive
 function sumPositive(arr) {
