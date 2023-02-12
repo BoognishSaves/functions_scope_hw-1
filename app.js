@@ -41,11 +41,24 @@ function sumArray(arr) {
     }
     return total;
 }
-console.log(sumArray([1,2,3,4,5,6]));
+// console.log(sumArray([1,2,3,4,5,6]));
+
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    if(num <2) {
+        return false;
+    }
+    for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return false
+        }
+    }
+    return true;
 }
+// console.log(checkPrime(51));
+// console.log(checkPrime(11));
+// console.log(checkPrime(5));
 
 // 6.2 printPrimes
 function printPrimes(num) {
