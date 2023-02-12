@@ -23,12 +23,14 @@ function isAVowel(letter) {
     }
     return false;
 }
-console.log(isAVowel("A"));
+// console.log(isAVowel("A"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    return [word1.length, word2.length];
 }
+console.log(getTwoLengths("Mississippi", "two"));
 
 // 5. sumArray
 function sumArray(arr) {
