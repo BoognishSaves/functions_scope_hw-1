@@ -63,7 +63,13 @@ function checkPrime(num) {
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+    for(let i = 2; i <= num; i++) {
+        if(checkPrime(i) === true) {
+            console.log(i);
+        }
+    }
 }
+// console.log(printPrimes(100));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
