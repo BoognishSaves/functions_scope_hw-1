@@ -82,7 +82,7 @@ function printLongestWord(arr) {
     }
     return word;
 }
-console.log(printLongestWord(["hello", "hi", "greetings"]));
+// console.log(printLongestWord(["hello", "hi", "greetings"]));
 
 // BONUS!
 
@@ -110,13 +110,21 @@ function findNeedle(arr) {
         }
     }
 }
-console.log(findNeedle(["tomato", "needle", "test"]));
+// console.log(findNeedle(["tomato", "needle", "test"]));
 
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
-}
+    let result = 0;
 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            result += arr[i];
+        }
+    }
+    return result
+}
+console.log(sumPositive([1, -4, 7, 12]));
 module.exports = {
     calculateCube,
     isAVowel,
